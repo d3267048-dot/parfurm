@@ -1,0 +1,669 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Каталог — ТВОЙ АРОМАТ</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">ТВОЙ АРОМАТ<span>.</span></a>
+      <nav class="main-nav">
+        <a href="index.html">Главная</a
+        ><a class="active" href="catalog.html">Каталог</a
+        ><a href="about.html">О бренде</a><a href="contacts.html">Контакты</a>
+      </nav>
+      <div class="header-actions">
+        <button
+          class="icon-button"
+          data-search-toggle
+          aria-label="Открыть поиск"
+        >
+          ⌕</button
+        ><button class="menu-toggle" aria-label="Открыть меню">☰</button>
+      </div>
+    </header>
+    <div class="search-panel">
+      <input
+        data-search-input
+        type="search"
+        placeholder="Найти аромат, бренд или ноту"
+      /><button data-search-close>Закрыть</button>
+    </div>
+    <main>
+      <section class="page-intro">
+        <p class="eyebrow">ТВОЙ АРОМАТ / каталог</p>
+        <h1>Найдите свой<br /><em>следующий аромат.</em></h1>
+        <p>
+          Арабская выразительность и американская лаконичность. 12 композиций,
+          проверенные временем и настроением.
+        </p>
+      </section>
+      <section class="catalog-section section-pad">
+        <div class="catalog-toolbar">
+          <div class="filter-buttons">
+            <button class="filter-button active" data-filter="all">
+              Все ароматы <span>12</span></button
+            ><button class="filter-button" data-filter="arabic">
+              Арабские <span>6</span></button
+            ><button class="filter-button" data-filter="american">
+              Американские <span>6</span>
+            </button>
+          </div>
+          <select aria-label="Сортировка">
+            <option>Сначала популярные</option>
+            <option>Сначала новинки</option>
+            <option>По возрастанию цены</option>
+          </select>
+        </div>
+        <div class="product-grid catalog-grid">
+          <article
+            class="product-card"
+            data-category="arabic"
+            data-name="Oud for Greatness"
+          >
+            <a href="#" class="product-image img-oud-for-greatness"
+              ><span class="product-tag">Бестселлер</span></a
+            >
+            <div class="product-info">
+              <div>
+                <h3>Oud for Greatness</h3>
+                <p>Initio · арабская коллекция</p>
+              </div>
+              <strong>24 900 ₽</strong>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-category="american"
+            data-name="Santal 33"
+          >
+            <a href="#" class="product-image img-santal-33"></a>
+            <div class="product-info">
+              <div>
+                <h3>Santal 33</h3>
+                <p>Le Labo · американская коллекция</p>
+              </div>
+              <strong>31 500 ₽</strong>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-category="arabic"
+            data-name="Delina Exclusif"
+          >
+            <a href="#" class="product-image img-delina-exclusif"
+              ><span class="product-tag">Новинка</span></a
+            >
+            <div class="product-info">
+              <div>
+                <h3>Delina Exclusif</h3>
+                <p>Parfums de Marly · арабская коллекция</p>
+              </div>
+              <strong>28 700 ₽</strong>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-category="american"
+            data-name="Another 13"
+          >
+            <a href="#" class="product-image img-another-13"></a>
+            <div class="product-info">
+              <div>
+                <h3>Another 13</h3>
+                <p>Le Labo · американская коллекция</p>
+              </div>
+              <strong>26 400 ₽</strong>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-category="arabic"
+            data-name="Gris Charnel"
+          >
+            <a href="#" class="product-image img-gris-charnel"></a>
+            <div class="product-info">
+              <div>
+                <h3>Gris Charnel</h3>
+                <p>BdK Parfums · арабская коллекция</p>
+              </div>
+              <strong>19 800 ₽</strong>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-category="american"
+            data-name="Mojave Ghost"
+          >
+            <a href="#" class="product-image img-mojave-ghost"
+              ><span class="product-tag">Хит</span></a
+            >
+            <div class="product-info">
+              <div>
+                <h3>Mojave Ghost</h3>
+                <p>Byredo · американская коллекция</p>
+              </div>
+              <strong>23 900 ₽</strong>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-category="arabic"
+            data-name="Baccarat Rouge 540"
+          >
+            <a href="#" class="product-image img-baccarat-rouge-540"></a>
+            <div class="product-info">
+              <div>
+                <h3>Baccarat Rouge 540</h3>
+                <p>Maison Francis Kurkdjian · арабская коллекция</p>
+              </div>
+              <strong>32 400 ₽</strong>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-category="american"
+            data-name="Thé Matcha 26"
+          >
+            <a href="#" class="product-image img-the-matcha-26"></a>
+            <div class="product-info">
+              <div>
+                <h3>Thé Matcha 26</h3>
+                <p>Le Labo · американская коллекция</p>
+              </div>
+              <strong>27 800 ₽</strong>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-category="arabic"
+            data-name="Oud Satin Mood"
+          >
+            <a href="#" class="product-image img-oud-satin-mood"></a>
+            <div class="product-info">
+              <div>
+                <h3>Oud Satin Mood</h3>
+                <p>Maison Francis Kurkdjian · арабская коллекция</p>
+              </div>
+              <strong>29 600 ₽</strong>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-category="american"
+            data-name="Bal d'Afrique"
+          >
+            <a href="#" class="product-image img-bal-dafrique"></a>
+            <div class="product-info">
+              <div>
+                <h3>Bal d'Afrique</h3>
+                <p>Byredo · американская коллекция</p>
+              </div>
+              <strong>22 700 ₽</strong>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-category="arabic"
+            data-name="Khamrah"
+          >
+            <a href="#" class="product-image img-khamrah"></a>
+            <div class="product-info">
+              <div>
+                <h3>Khamrah</h3>
+                <p>Lattafa · арабская коллекция</p>
+              </div>
+              <strong>5 900 ₽</strong>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-category="american"
+            data-name="Tom Ford Black Orchid"
+          >
+            <a href="#" class="product-image img-tom-ford-black-orchid"></a>
+            <div class="product-info">
+              <div>
+                <h3>Black Orchid</h3>
+                <p>Tom Ford · американская коллекция</p>
+              </div>
+              <strong>15 900 ₽</strong>
+            </div>
+          </article>
+          <article class="product-card" data-category="arabic" data-name="Ani">
+            <a href="#" class="product-image img-gris"></a>
+            <div class="product-info">
+              <div>
+                <h3>Ani</h3>
+                <p>Nishane · арабская коллекция</p>
+              </div>
+              <strong>26 900 ₽</strong>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-category="american"
+            data-name="Gypsy Water"
+          >
+            <a href="#" class="product-image img-mojave"></a>
+            <div class="product-info">
+              <div>
+                <h3>Gypsy Water</h3>
+                <p>Byredo · американская коллекция</p>
+              </div>
+              <strong>22 900 ₽</strong>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-category="arabic"
+            data-name="Musk Therapy"
+          >
+            <a href="#" class="product-image img-oud"></a>
+            <div class="product-info">
+              <div>
+                <h3>Musk Therapy</h3>
+                <p>Initio · арабская коллекция</p>
+              </div>
+              <strong>25 300 ₽</strong>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-category="american"
+            data-name="Sundazed"
+          >
+            <a href="#" class="product-image img-santal"></a>
+            <div class="product-info">
+              <div>
+                <h3>Sundazed</h3>
+                <p>Byredo · американская коллекция</p>
+              </div>
+              <strong>21 600 ₽</strong>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-category="arabic"
+            data-name="Erba Pura"
+          >
+            <a href="#" class="product-image img-rose"></a>
+            <div class="product-info">
+              <div>
+                <h3>Erba Pura</h3>
+                <p>Xerjoff · арабская коллекция</p>
+              </div>
+              <strong>27 400 ₽</strong>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-category="american"
+            data-name="Rose 31"
+          >
+            <a href="#" class="product-image img-another"></a>
+            <div class="product-info">
+              <div>
+                <h3>Rose 31</h3>
+                <p>Le Labo · американская коллекция</p>
+              </div>
+              <strong>25 900 ₽</strong>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-category="arabic"
+            data-name="Ani X"
+          >
+            <a href="#" class="product-image img-gris"></a>
+            <div class="product-info">
+              <div>
+                <h3>Ani X</h3>
+                <p>Nishane · арабская коллекция</p>
+              </div>
+              <strong>28 200 ₽</strong>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-category="american"
+            data-name="Super Cedar"
+          >
+            <a href="#" class="product-image img-mojave"></a>
+            <div class="product-info">
+              <div>
+                <h3>Super Cedar</h3>
+                <p>Byredo · американская коллекция</p>
+              </div>
+              <strong>21 900 ₽</strong>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-category="arabic"
+            data-name="Tobacco Vanille"
+          >
+            <a href="#" class="product-image img-oud"></a>
+            <div class="product-info">
+              <div>
+                <h3>Tobacco Vanille</h3>
+                <p>Tom Ford · арабская коллекция</p>
+              </div>
+              <strong>30 100 ₽</strong>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-category="american"
+            data-name="Bergamote 22"
+          >
+            <a href="#" class="product-image img-santal"></a>
+            <div class="product-info">
+              <div>
+                <h3>Bergamote 22</h3>
+                <p>Le Labo · американская коллекция</p>
+              </div>
+              <strong>24 500 ₽</strong>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-category="arabic"
+            data-name="Naxos"
+          >
+            <a href="#" class="product-image img-rose"></a>
+            <div class="product-info">
+              <div>
+                <h3>Naxos</h3>
+                <p>Xerjoff · арабская коллекция</p>
+              </div>
+              <strong>26 800 ₽</strong>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-category="american"
+            data-name="The Noir 29"
+          >
+            <a href="#" class="product-image img-another"></a>
+            <div class="product-info">
+              <div>
+                <h3>The Noir 29</h3>
+                <p>Le Labo · американская коллекция</p>
+              </div>
+              <strong>25 600 ₽</strong>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-category="arabic"
+            data-name="Hacivat"
+          >
+            <a href="#" class="product-image img-gris"></a>
+            <div class="product-info">
+              <div>
+                <h3>Hacivat</h3>
+                <p>Nishane · арабская коллекция</p>
+              </div>
+              <strong>27 100 ₽</strong>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-category="american"
+            data-name="Molecule 01"
+          >
+            <a href="#" class="product-image img-mojave"></a>
+            <div class="product-info">
+              <div>
+                <h3>Molecule 01</h3>
+                <p>Escentric Molecules · американская коллекция</p>
+              </div>
+              <strong>18 900 ₽</strong>
+            </div>
+          </article>
+          <article class="product-card" data-category="arabic" data-name="Lira">
+            <a href="#" class="product-image img-oud"></a>
+            <div class="product-info">
+              <div>
+                <h3>Lira</h3>
+                <p>Xerjoff · арабская коллекция</p>
+              </div>
+              <strong>24 700 ₽</strong>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-category="american"
+            data-name="Matcha Meditation"
+          >
+            <a href="#" class="product-image img-santal"></a>
+            <div class="product-info">
+              <div>
+                <h3>Matcha Meditation</h3>
+                <p>Maison Margiela · американская коллекция</p>
+              </div>
+              <strong>19 600 ₽</strong>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-category="arabic"
+            data-name="Layton"
+          >
+            <a href="#" class="product-image img-rose"></a>
+            <div class="product-info">
+              <div>
+                <h3>Layton</h3>
+                <p>Parfums de Marly · арабская коллекция</p>
+              </div>
+              <strong>29 300 ₽</strong>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-category="american"
+            data-name="Neroli Portofino"
+          >
+            <a href="#" class="product-image img-another"></a>
+            <div class="product-info">
+              <div>
+                <h3>Neroli Portofino</h3>
+                <p>Tom Ford · американская коллекция</p>
+              </div>
+              <strong>28 600 ₽</strong>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-category="arabic"
+            data-name="Mancera Cedrat Boise"
+          >
+            <a href="#" class="product-image img-gris"></a>
+            <div class="product-info">
+              <div>
+                <h3>Cedrat Boise</h3>
+                <p>Mancera · арабская коллекция</p>
+              </div>
+              <strong>17 900 ₽</strong>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-category="american"
+            data-name="Wood Sage & Sea Salt"
+          >
+            <a href="#" class="product-image img-mojave"></a>
+            <div class="product-info">
+              <div>
+                <h3>Wood Sage &amp; Sea Salt</h3>
+                <p>Jo Malone · американская коллекция</p>
+              </div>
+              <strong>20 400 ₽</strong>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-category="arabic"
+            data-name="Gentle Fluidity Gold"
+          >
+            <a href="#" class="product-image img-oud"></a>
+            <div class="product-info">
+              <div>
+                <h3>Gentle Fluidity Gold</h3>
+                <p>Maison Francis Kurkdjian · арабская коллекция</p>
+              </div>
+              <strong>29 900 ₽</strong>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-category="american"
+            data-name="Black Saffron"
+          >
+            <a href="#" class="product-image img-santal"></a>
+            <div class="product-info">
+              <div>
+                <h3>Black Saffron</h3>
+                <p>Byredo · американская коллекция</p>
+              </div>
+              <strong>23 400 ₽</strong>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-category="arabic"
+            data-name="Kirké"
+          >
+            <a href="#" class="product-image img-rose"></a>
+            <div class="product-info">
+              <div>
+                <h3>Kirké</h3>
+                <p>Tiziana Terenzi · арабская коллекция</p>
+              </div>
+              <strong>22 800 ₽</strong>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-category="american"
+            data-name="Colonia"
+          >
+            <a href="#" class="product-image img-another"></a>
+            <div class="product-info">
+              <div>
+                <h3>Colonia</h3>
+                <p>Acqua di Parma · американская коллекция</p>
+              </div>
+              <strong>19 900 ₽</strong>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-category="arabic"
+            data-name="Santal Royal"
+          >
+            <a href="#" class="product-image img-gris"></a>
+            <div class="product-info">
+              <div>
+                <h3>Santal Royal</h3>
+                <p>Guerlain · арабская коллекция</p>
+              </div>
+              <strong>26 300 ₽</strong>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-category="american"
+            data-name="Jazz Club"
+          >
+            <a href="#" class="product-image img-mojave"></a>
+            <div class="product-info">
+              <div>
+                <h3>Jazz Club</h3>
+                <p>Maison Margiela · американская коллекция</p>
+              </div>
+              <strong>18 700 ₽</strong>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-category="arabic"
+            data-name="Molecule 02"
+          >
+            <a href="#" class="product-image img-oud"></a>
+            <div class="product-info">
+              <div>
+                <h3>Molecule 02</h3>
+                <p>Escentric Molecules · арабская коллекция</p>
+              </div>
+              <strong>18 900 ₽</strong>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-category="american"
+            data-name="Bal d'Afrique Absolu"
+          >
+            <a href="#" class="product-image img-santal"></a>
+            <div class="product-info">
+              <div>
+                <h3>Bal d'Afrique Absolu</h3>
+                <p>Byredo · американская коллекция</p>
+              </div>
+              <strong>26 700 ₽</strong>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-category="arabic"
+            data-name="Oud Wood"
+          >
+            <a href="#" class="product-image img-rose"></a>
+            <div class="product-info">
+              <div>
+                <h3>Oud Wood</h3>
+                <p>Tom Ford · арабская коллекция</p>
+              </div>
+              <strong>30 800 ₽</strong>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-category="american"
+            data-name="White Suede"
+          >
+            <a href="#" class="product-image img-another"></a>
+            <div class="product-info">
+              <div>
+                <h3>White Suede</h3>
+                <p>Tom Ford · американская коллекция</p>
+              </div>
+              <strong>27 300 ₽</strong>
+            </div>
+          </article>
+        </div>
+        <p class="no-results">Ничего не найдено. Попробуйте другой запрос.</p>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <a class="brand" href="index.html">ТВОЙ АРОМАТ<span>.</span></a>
+      <p>Парфюмерия, которая остается.</p>
+      <div class="footer-links">
+        <a href="catalog.html">Каталог</a><a href="about.html">О бренде</a
+        ><a href="contacts.html">Доставка и контакты</a>
+      </div>
+      <small>© 2024 ТВОЙ АРОМАТ</small>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
